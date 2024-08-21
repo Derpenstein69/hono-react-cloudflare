@@ -1,37 +1,38 @@
 {
-  "name": "hono-vite",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "wrangler dev",
-    "build": "tsc && vite build",
-    "server": "tsx src/server.tsx",
-    "deploy": "wrangler deploy"
-  },
-  "dependencies": {
-    "@hono/zod-validator": "^0.1.10",
-    "@tanstack/react-query": "^5.0.5",
-    "@tanstack/react-query-devtools": "^5.4.2",
-    "hono": "^3.8.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "vite-tsconfig-paths": "^4.2.1",
-    "zod": "^3.22.4"
-  },
-  "devDependencies": {
-    "@cloudflare/kv-asset-handler": "^0.3.0",
-    "@cloudflare/workers-types": "^4.20231025.0",
-    "@hono/vite-dev-server": "^0.0.12",
-    "@rspack/cli": "^0.3.8",
-    "@rspack/plugin-node-polyfill": "^0.3.8",
-    "@types/node": "^20.8.9",
-    "@types/react": "^18.2.33",
-    "@types/react-dom": "^18.2.14",
-    "@vitejs/plugin-react": "^4.1.0",
-    "tsx": "^3.14.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5",
-    "wrangler": "^3.14.0"
-  }
+	"name": "hono-vite",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev",
+		"build": "tsc && vite build",
+		"server": "tsx src/server.tsx",
+		"deploy": "wrangler deploy"
+	},
+	"dependencies": {
+		"@hono/zod-validator": "^0.1.11",
+		"@tanstack/react-query": "^5.52.0",
+		"@tanstack/react-query-devtools": "^5.52.0",
+		"hono": "^4.5.7",
+		"hono-vite": "file:",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"vite-tsconfig-paths": "^4.3.2",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@cloudflare/kv-asset-handler": "^0.3.0",
+		"@cloudflare/workers-types": "^4.20240815.0",
+		"@hono/vite-dev-server": "^0.0.12",
+		"@rspack/cli": "^0.7.5",
+		"@rspack/plugin-node-polyfill": "^0.3.14",
+		"@types/node": "^20.16.1",
+		"@types/react": "^18.3.4",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"tsx": "^3.14.0",
+		"typescript": "^5.5.4",
+		"vite": "^4.5.3",
+		"wrangler": "^3.72.1"
+	}
 }
